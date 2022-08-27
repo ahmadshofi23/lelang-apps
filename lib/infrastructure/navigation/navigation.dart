@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:lelang_apps/presentation/login/controller/login.controller.dart';
+import 'package:lelang_apps/presentation/lupa-password/lupa.password.scree.dart';
 import 'package:lelang_apps/presentation/register/register.screen.dart';
 
 import '../../config.dart';
@@ -42,6 +43,11 @@ class Nav {
       name: Routes.REGISTER,
       page: () => const RegisterScreen(),
       binding: RegisterControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.LUPAPASSWORD,
+      page: () => const LupaPasswordScreen(),
+      binding: LupaPasswordBinding(),
     )
   ];
 }

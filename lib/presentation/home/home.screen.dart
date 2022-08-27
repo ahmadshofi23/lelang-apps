@@ -116,7 +116,7 @@ class HomeScreen extends GetView<HomeController> {
                         screenWidth: screenWidth),
                     SizedBox(height: screenHeight * 0.02),
                     InkWell(
-                      onTap: () {},
+                      onTap: () => Get.toNamed(Routes.LUPAPASSWORD),
                       child: Text(
                         "Lupa Password",
                         style: TextStyle(
