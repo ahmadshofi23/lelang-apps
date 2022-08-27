@@ -20,7 +20,7 @@ class RegisterScreen extends GetView<RegisterController> {
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.only(
-            top: screenHeight * 0.05,
+            top: screenHeight * 0.08,
             bottom: screenHeight * 0.02,
             left: screenWidth * 0.04,
             right: screenWidth * 0.04,
