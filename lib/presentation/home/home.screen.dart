@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:lelang_apps/infrastructure/navigation/routes.dart';
 import 'package:lelang_apps/infrastructure/theme/utils.dart';
 import 'package:lelang_apps/presentation/component/custom.button.icon.dart';
 import 'package:lelang_apps/presentation/component/custome.textfield.dart';
@@ -68,6 +69,7 @@ class HomeScreen extends GetView<HomeController> {
                     ),
                     SizedBox(height: screenHeight * 0.03),
                     DefaultButton(
+                      text: "Sign In",
                       screenHeight: screenHeight,
                       screenWidth: screenWidth,
                     ),
@@ -137,9 +139,9 @@ class HomeScreen extends GetView<HomeController> {
                         ),
                         SizedBox(width: screenHeight * 0.01),
                         InkWell(
-                          onTap: () {},
+                          onTap: () => Get.toNamed(Routes.REGISTER),
                           child: Text(
-                            "Lupa Password",
+                            "Register",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: screenWidth * 0.04,

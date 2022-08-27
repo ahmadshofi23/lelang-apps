@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:lelang_apps/infrastructure/theme/utils.dart';
 
 class DefaultButton extends StatelessWidget {
-  const DefaultButton({
+  DefaultButton({
     Key? key,
+    required this.text,
     required this.screenHeight,
     required this.screenWidth,
   }) : super(key: key);
-
+  String text;
   final double screenHeight;
   final double screenWidth;
 
@@ -22,7 +23,7 @@ class DefaultButton extends StatelessWidget {
         ),
         onPressed: () {},
         child: Text(
-          "Sign in",
+          text,
           style: TextStyle(
             fontWeight: FontWeight.w700,
             fontSize: screenWidth * 0.04,

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:lelang_apps/presentation/login/controller/login.controller.dart';
+import 'package:lelang_apps/presentation/register/register.screen.dart';
 
 import '../../config.dart';
 import '../../presentation/screens.dart';
@@ -36,6 +37,11 @@ class Nav {
       name: Routes.LOGIN,
       page: () => const LoginScreen(),
       binding: LoginControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.REGISTER,
+      page: () => const RegisterScreen(),
+      binding: RegisterControllerBinding(),
     )
   ];
 }

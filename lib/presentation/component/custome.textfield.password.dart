@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lelang_apps/infrastructure/theme/utils.dart';
 
-class CUSTOMETEXTFIELD extends StatelessWidget {
-  CUSTOMETEXTFIELD({
+class CustomeTextFieldPassword extends StatelessWidget {
+  CustomeTextFieldPassword({
     Key? key,
     required this.icon,
     required this.hint,
@@ -12,6 +12,7 @@ class CUSTOMETEXTFIELD extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      obscureText: true,
       decoration: InputDecoration(
         prefixIcon: icon,
         hintText: hint,
