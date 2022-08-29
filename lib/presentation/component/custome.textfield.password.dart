@@ -16,6 +16,7 @@ class CustomeTextFieldPassword extends StatelessWidget {
       decoration: InputDecoration(
         prefixIcon: icon,
         hintText: hint,
+        hintStyle: TextStyle(fontWeight: FontWeight.w700, color: kGreyColor),
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(
             color: kGreyColor.withOpacity(0.1),

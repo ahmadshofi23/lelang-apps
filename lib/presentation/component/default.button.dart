@@ -4,10 +4,12 @@ import 'package:lelang_apps/infrastructure/theme/utils.dart';
 class DefaultButton extends StatelessWidget {
   DefaultButton({
     Key? key,
+    required this.press,
     required this.text,
     required this.screenHeight,
     required this.screenWidth,
   }) : super(key: key);
+  VoidCallback press;
   String text;
   final double screenHeight;
   final double screenWidth;
@@ -21,7 +23,7 @@ class DefaultButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           primary: kBlueColor,
         ),
-        onPressed: () {},
+        onPressed: press,
         child: Text(
           text,
           style: TextStyle(

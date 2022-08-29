@@ -84,6 +84,7 @@ class RegisterScreen extends GetView<RegisterController> {
                     hint: "Password Again"),
                 SizedBox(height: screenHeight * 0.02),
                 DefaultButton(
+                    press: () => Get.toNamed(Routes.VERIFIKASINOMER),
                     text: "Sign Up",
                     screenHeight: screenHeight,
                     screenWidth: screenWidth),

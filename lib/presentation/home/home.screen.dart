@@ -5,6 +5,7 @@ import 'package:lelang_apps/infrastructure/navigation/routes.dart';
 import 'package:lelang_apps/infrastructure/theme/utils.dart';
 import 'package:lelang_apps/presentation/component/custom.button.icon.dart';
 import 'package:lelang_apps/presentation/component/custome.textfield.dart';
+import 'package:lelang_apps/presentation/component/custome.textfield.password.dart';
 import 'package:lelang_apps/presentation/component/default.button.dart';
 
 import 'controllers/home.controller.dart';
@@ -63,12 +64,12 @@ class HomeScreen extends GetView<HomeController> {
                       icon: const Icon(Icons.email_outlined),
                     ),
                     SizedBox(height: screenHeight * 0.02),
-                    CUSTOMETEXTFIELD(
-                      hint: "Password",
-                      icon: const Icon(Icons.lock_outline_sharp),
-                    ),
+                    CustomeTextFieldPassword(
+                        icon: const Icon(Icons.lock_outline_sharp),
+                        hint: "Password"),
                     SizedBox(height: screenHeight * 0.03),
                     DefaultButton(
+                      press: () {},
                       text: "Sign In",
                       screenHeight: screenHeight,
                       screenWidth: screenWidth,

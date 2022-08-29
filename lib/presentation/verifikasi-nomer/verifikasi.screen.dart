@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/src/foundation/key.dart';
+import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
 import 'package:lelang_apps/infrastructure/navigation/routes.dart';
 import 'package:lelang_apps/infrastructure/theme/utils.dart';
+import 'package:lelang_apps/presentation/component/custome.textfield.dart';
 import 'package:lelang_apps/presentation/component/default.button.dart';
-import 'package:lelang_apps/presentation/lupa-password/controller/lupa.password.controller.dart';
 
-class LupaPasswordScreen extends GetView<LupaPasswordController> {
-  const LupaPasswordScreen({Key? key}) : super(key: key);
+class VerifikasiNomerScreen extends StatelessWidget {
+  const VerifikasiNomerScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,15 +17,14 @@ class LupaPasswordScreen extends GetView<LupaPasswordController> {
     var bottomButton = MediaQuery.of(context).padding.bottom;
     return Scaffold(
       appBar: AppBar(
-        elevation: 0.0,
-        foregroundColor: kGreyColor.withOpacity(0.7),
         backgroundColor: Colors.transparent,
-        title: const Text(
-          "Verifikasi Nomer",
-        ),
+        elevation: 0.0,
+        foregroundColor: kGreyColor.withOpacity(0.6),
+        title: const Text("Verifikasi Nomer"),
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.04),
+        padding: EdgeInsets.symmetric(
+            horizontal: screenWidth * 0.04, vertical: screenHeight * 0.02),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -37,15 +38,15 @@ class LupaPasswordScreen extends GetView<LupaPasswordController> {
                 ),
               ),
             ),
+            SizedBox(height: screenHeight * 0.02),
+            CUSTOMETEXTFIELD(
+                icon: Icon(Icons.phone_iphone_sharp), hint: "(+62) 555-0133"),
             Spacer(),
             DefaultButton(
-                press: () => Get.toNamed(Routes.LUPAPASSWORD),
+                press: () => Get.toNamed(Routes.VERIFIKASICODE),
                 text: "Save",
                 screenHeight: screenHeight,
                 screenWidth: screenWidth),
-            SizedBox(
-              height: bottomButton,
-            )
           ],
         ),
       ),

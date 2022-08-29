@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:lelang_apps/infrastructure/navigation/bindings/controllers/verifikasi.controller.binding.dart';
 import 'package:lelang_apps/presentation/login/controller/login.controller.dart';
 import 'package:lelang_apps/presentation/lupa-password/lupa.password.scree.dart';
 import 'package:lelang_apps/presentation/register/register.screen.dart';
+import 'package:lelang_apps/presentation/verifikasi-code/verifikasi.code.screen.dart';
+import 'package:lelang_apps/presentation/verifikasi-nomer/verifikasi.screen.dart';
 
 import '../../config.dart';
 import '../../presentation/screens.dart';
@@ -48,6 +51,16 @@ class Nav {
       name: Routes.LUPAPASSWORD,
       page: () => const LupaPasswordScreen(),
       binding: LupaPasswordBinding(),
+    ),
+    GetPage(
+      name: Routes.VERIFIKASINOMER,
+      page: () => const VerifikasiNomerScreen(),
+      binding: VerifikasiNomerControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.VERIFIKASICODE,
+      page: () => const VerifikasiCodeScreen(),
+      binding: VerifikasiCodeControllerBinding(),
     )
   ];
 }
