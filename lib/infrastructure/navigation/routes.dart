@@ -10,4 +10,5 @@ class Routes {
   static const LUPAPASSWORD = '/lupapassword';
   static const VERIFIKASINOMER = '/verifikasinomer';
   static const VERIFIKASICODE = '/verifikasicode';
+  static const SUCCESS = '/Success';
 }

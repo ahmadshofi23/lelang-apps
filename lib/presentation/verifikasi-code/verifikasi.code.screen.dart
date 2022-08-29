@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:get/get.dart';
+import 'package:lelang_apps/infrastructure/navigation/routes.dart';
 import 'package:lelang_apps/infrastructure/theme/utils.dart';
 import 'package:lelang_apps/presentation/component/default.button.dart';
 
@@ -67,7 +69,7 @@ class VerifikasiCodeScreen extends StatelessWidget {
               ),
               Spacer(),
               DefaultButton(
-                press: () {},
+                press: () => Get.toNamed(Routes.SUCCESS),
                 text: "Lanjutkan",
                 screenHeight: screenHeight,
                 screenWidth: screenWidth,
