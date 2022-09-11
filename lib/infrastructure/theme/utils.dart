@@ -11,4 +11,6 @@ Color kOrangeColorOne = Color(0xffFBECE5);
 Color kOrangeLigth = Color(0xffFAAD89);
 Color kWhiteColor = Colors.white;
 Color darkColor = Color(0xff223263);
+Color kBlackColor = Colors.black;
+Color kNeutralGrey = Color(0xff9098B1);
 Color kGreyColor = Color(0xff000000).withOpacity(0.38);
