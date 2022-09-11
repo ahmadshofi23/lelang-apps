@@ -6,3 +6,4 @@ export 'package:lelang_apps/infrastructure/navigation/bindings/controllers/regis
 export 'package:lelang_apps/infrastructure/navigation/bindings/controllers/verifikasi.code.controller.binding.dart';
 export 'package:lelang_apps/infrastructure/navigation/bindings/controllers/verifikasi.controller.binding.dart';
 export 'package:lelang_apps/infrastructure/navigation/bindings/controllers/success.controller.binding.dart';
+export 'package:lelang_apps/infrastructure/navigation/bindings/controllers/landing.controller.binding.dart';

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lelang_apps/infrastructure/navigation/routes.dart';
 import 'package:lelang_apps/infrastructure/theme/utils.dart';
+import 'package:lelang_apps/presentation/component/custome.textfield.dart';
 import 'package:lelang_apps/presentation/component/default.button.dart';
 import 'package:lelang_apps/presentation/lupa-password/controller/lupa.password.controller.dart';
 
@@ -16,10 +17,13 @@ class LupaPasswordScreen extends GetView<LupaPasswordController> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
-        foregroundColor: kGreyColor.withOpacity(0.7),
+        foregroundColor: kGreyColor.withOpacity(0.9),
         backgroundColor: Colors.transparent,
         title: const Text(
           "Verifikasi Nomer",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
       body: Padding(
@@ -37,6 +41,10 @@ class LupaPasswordScreen extends GetView<LupaPasswordController> {
                 ),
               ),
             ),
+            SizedBox(height: screenHeight * 0.02),
+            CUSTOMETEXTFIELD(
+                icon: Icon(Icons.phone_iphone_sharp), hint: "(+62) 555-0133"),
+            Spacer(),
             Spacer(),
             DefaultButton(
                 press: () => Get.toNamed(Routes.LUPAPASSWORD),
@@ -44,7 +52,7 @@ class LupaPasswordScreen extends GetView<LupaPasswordController> {
                 screenHeight: screenHeight,
                 screenWidth: screenWidth),
             SizedBox(
-              height: bottomButton,
+              height: screenHeight * 0.02,
             )
           ],
         ),

@@ -11,4 +11,5 @@ class Routes {
   static const VERIFIKASINOMER = '/verifikasinomer';
   static const VERIFIKASICODE = '/verifikasicode';
   static const SUCCESS = '/Success';
+  static const LANDING = '/Landing';
 }

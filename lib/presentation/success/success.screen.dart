@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:lelang_apps/infrastructure/navigation/routes.dart';
 import 'package:lelang_apps/infrastructure/theme/utils.dart';
 import 'package:lelang_apps/presentation/component/default.button.dart';
 
@@ -50,7 +52,7 @@ class SuccessScreen extends StatelessWidget {
                 SizedBox(height: screenHeight * 0.02),
                 SizedBox(height: screenHeight * 0.02),
                 DefaultButton(
-                  press: () {},
+                  press: () => Get.offAllNamed(Routes.LANDING),
                   text: "Go Auction",
                   screenHeight: screenHeight,
                   screenWidth: screenWidth,

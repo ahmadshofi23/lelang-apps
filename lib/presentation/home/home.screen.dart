@@ -7,6 +7,7 @@ import 'package:lelang_apps/presentation/component/custom.button.icon.dart';
 import 'package:lelang_apps/presentation/component/custome.textfield.dart';
 import 'package:lelang_apps/presentation/component/custome.textfield.password.dart';
 import 'package:lelang_apps/presentation/component/default.button.dart';
+import 'package:lelang_apps/presentation/component/string.text.dart';
 
 import 'controllers/home.controller.dart';
 
@@ -37,13 +38,13 @@ class HomeScreen extends GetView<HomeController> {
                       children: [
                         Image.asset(
                           "assets/icon/auction.png",
-                          height: screenHeight * 0.13,
+                          height: screenHeight * 0.11,
                         ),
                         Text(
-                          "Trule",
+                          TextApps.title,
                           style: TextStyle(
                             color: kBlueColor,
-                            fontSize: screenWidth * 0.13,
+                            fontSize: screenWidth * 0.12,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -69,8 +70,8 @@ class HomeScreen extends GetView<HomeController> {
                         hint: "Password"),
                     SizedBox(height: screenHeight * 0.03),
                     DefaultButton(
-                      press: () {},
-                      text: "Sign In",
+                      press: () => Get.toNamed(Routes.SUCCESS),
+                      text: TextApps.signIn,
                       screenHeight: screenHeight,
                       screenWidth: screenWidth,
                     ),
@@ -106,13 +107,13 @@ class HomeScreen extends GetView<HomeController> {
                     SizedBox(height: screenHeight * 0.02),
                     CustomButtonIcon(
                         image: "assets/icon/google.png",
-                        text: "Log in With Google",
+                        text: TextApps.logInWithGoole,
                         screenHeight: screenHeight,
                         screenWidth: screenWidth),
                     SizedBox(height: screenHeight * 0.02),
                     CustomButtonIcon(
                         image: "assets/icon/facebook.png",
-                        text: "Log in with Facebook",
+                        text: TextApps.logInWithFacebook,
                         screenHeight: screenHeight,
                         screenWidth: screenWidth),
                     SizedBox(height: screenHeight * 0.02),

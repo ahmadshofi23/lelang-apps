@@ -7,6 +7,7 @@ import 'package:lelang_apps/infrastructure/theme/utils.dart';
 import 'package:lelang_apps/presentation/component/custome.textfield.dart';
 import 'package:lelang_apps/presentation/component/custome.textfield.password.dart';
 import 'package:lelang_apps/presentation/component/default.button.dart';
+import 'package:lelang_apps/presentation/component/string.text.dart';
 import 'package:lelang_apps/presentation/register/controller/register.controller.dart';
 
 class RegisterScreen extends GetView<RegisterController> {
@@ -35,13 +36,13 @@ class RegisterScreen extends GetView<RegisterController> {
                   children: [
                     Image.asset(
                       "assets/icon/auction.png",
-                      height: screenHeight * 0.13,
+                      height: screenHeight * 0.11,
                     ),
                     Text(
-                      "Trule",
+                      TextApps.title,
                       style: TextStyle(
                         color: kBlueColor,
-                        fontSize: screenWidth * 0.13,
+                        fontSize: screenWidth * 0.11,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -85,7 +86,7 @@ class RegisterScreen extends GetView<RegisterController> {
                 SizedBox(height: screenHeight * 0.02),
                 DefaultButton(
                     press: () => Get.toNamed(Routes.VERIFIKASINOMER),
-                    text: "Sign Up",
+                    text: TextApps.signUp,
                     screenHeight: screenHeight,
                     screenWidth: screenWidth),
                 Row(

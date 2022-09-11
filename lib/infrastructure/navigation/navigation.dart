@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:lelang_apps/infrastructure/navigation/bindings/controllers/home.controller.binding%20copy.dart';
 import 'package:lelang_apps/infrastructure/navigation/bindings/controllers/verifikasi.controller.binding.dart';
+import 'package:lelang_apps/presentation/landing/landing.screen.dart';
 import 'package:lelang_apps/presentation/login/controller/login.controller.dart';
 import 'package:lelang_apps/presentation/lupa-password/lupa.password.scree.dart';
 import 'package:lelang_apps/presentation/register/register.screen.dart';
@@ -67,6 +69,11 @@ class Nav {
       name: Routes.SUCCESS,
       page: () => const SuccessScreen(),
       binding: SuccessControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.LANDING,
+      page: () => const LandingScreen(),
+      binding: LandingControllerBinding(),
     ),
   ];
 }
