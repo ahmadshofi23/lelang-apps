@@ -22,8 +22,6 @@ class LandingScreen extends GetView<LandingController> {
 
   @override
   Widget build(BuildContext context) {
-    var screenHeight = MediaQuery.of(context).size.height;
-    var screenWidth = MediaQuery.of(context).size.width;
     return GetBuilder<LandingController>(
       builder: (controller) {
         return Scaffold(
@@ -31,7 +29,7 @@ class LandingScreen extends GetView<LandingController> {
           body: SafeArea(
             child: IndexedStack(
               index: controller.currentIndex,
-              children: [
+              children: const [
                 HomePage(),
                 IklanPage(),
                 PostingPage(),
@@ -44,7 +42,7 @@ class LandingScreen extends GetView<LandingController> {
               onTap: controller.changeIndex,
               currentIndex: controller.currentIndex,
               selectedItemColor: kBlueColor,
-              unselectedItemColor: kOrangeLigth,
+              unselectedItemColor: kNeutralGrey,
               items: const [
                 BottomNavigationBarItem(
                     icon: FaIcon(
@@ -57,8 +55,8 @@ class LandingScreen extends GetView<LandingController> {
                     ),
                     label: "Iklan Anda"),
                 BottomNavigationBarItem(
-                    icon: FaIcon(
-                      FontAwesomeIcons.cameraRotate,
+                    icon: Icon(
+                      Icons.camera_outlined,
                     ),
                     label: "Posting"),
                 BottomNavigationBarItem(
