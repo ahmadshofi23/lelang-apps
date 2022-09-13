@@ -235,8 +235,8 @@ class CardLike extends StatelessWidget {
                       SizedBox(height: screenHeight * 0.01),
                       Row(
                         children: [
-                          Icon(
-                            CupertinoIcons.shopping_cart,
+                          FaIcon(
+                            FontAwesomeIcons.bagShopping,
                             color: kGreyColor,
                           ),
                           SizedBox(width: screenHeight * 0.01),
@@ -253,7 +253,7 @@ class CardLike extends StatelessWidget {
                       Row(
                         children: [
                           Icon(
-                            CupertinoIcons.square_list,
+                            CupertinoIcons.doc_plaintext,
                             color: kGreyColor,
                           ),
                           SizedBox(width: screenHeight * 0.01),

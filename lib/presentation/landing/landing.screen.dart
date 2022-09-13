@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -45,13 +46,13 @@ class LandingScreen extends GetView<LandingController> {
               unselectedItemColor: kNeutralGrey,
               items: const [
                 BottomNavigationBarItem(
-                    icon: FaIcon(
+                    icon: Icon(
                       FontAwesomeIcons.house,
                     ),
                     label: "Home"),
                 BottomNavigationBarItem(
-                    icon: FaIcon(
-                      FontAwesomeIcons.rectangleAd,
+                    icon: Icon(
+                      CupertinoIcons.speaker_3,
                     ),
                     label: "Iklan Anda"),
                 BottomNavigationBarItem(
@@ -60,10 +61,10 @@ class LandingScreen extends GetView<LandingController> {
                     ),
                     label: "Posting"),
                 BottomNavigationBarItem(
-                    icon: FaIcon(FontAwesomeIcons.cameraRotate),
+                    icon: FaIcon(FontAwesomeIcons.bookmark),
                     label: "Transaksi"),
                 BottomNavigationBarItem(
-                    icon: FaIcon(FontAwesomeIcons.linkedin), label: "Kesukaan"),
+                    icon: FaIcon(FontAwesomeIcons.heart), label: "Kesukaan"),
               ]),
         );
       },
