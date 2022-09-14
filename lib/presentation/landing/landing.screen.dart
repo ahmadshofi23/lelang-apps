@@ -58,6 +58,7 @@ class LandingScreen extends GetView<LandingController> {
                 BottomNavigationBarItem(
                     icon: Icon(
                       Icons.camera_outlined,
+                      size: 50,
                     ),
                     label: "Posting"),
                 BottomNavigationBarItem(

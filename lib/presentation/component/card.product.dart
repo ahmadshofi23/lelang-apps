@@ -16,7 +16,7 @@ class CardProduct extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: screenWidth * 0.4,
+      width: screenWidth * 0.5,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5),
         color: kWhiteColor,

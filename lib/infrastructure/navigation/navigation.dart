@@ -6,6 +6,7 @@ import 'package:lelang_apps/infrastructure/navigation/bindings/controllers/verif
 import 'package:lelang_apps/presentation/landing/landing.screen.dart';
 import 'package:lelang_apps/presentation/login/controller/login.controller.dart';
 import 'package:lelang_apps/presentation/lupa-password/lupa.password.scree.dart';
+import 'package:lelang_apps/presentation/profile/profile.screen.dart';
 import 'package:lelang_apps/presentation/register/register.screen.dart';
 import 'package:lelang_apps/presentation/success/success.screen.dart';
 import 'package:lelang_apps/presentation/verifikasi-code/verifikasi.code.screen.dart';
@@ -74,6 +75,11 @@ class Nav {
       name: Routes.LANDING,
       page: () => const LandingScreen(),
       binding: LandingControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.PROFILE,
+      page: () => const ProfileScreen(),
+      binding: ProfileControllerBinding(),
     ),
   ];
 }

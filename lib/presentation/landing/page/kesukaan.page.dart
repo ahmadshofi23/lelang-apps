@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lelang_apps/infrastructure/theme/utils.dart';
 import 'package:lelang_apps/presentation/component/custome.textfield.dart';
@@ -15,7 +13,7 @@ class KesukaanPage extends StatelessWidget {
     var screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(screenHeight * 0.092),
+          preferredSize: Size.fromHeight(screenHeight * 0.099),
           child: Container(
             width: double.infinity,
             color: kWhiteColor,
@@ -106,6 +104,7 @@ class KesukaanPage extends StatelessWidget {
                     Expanded(
                       child: FloatingActionButton(
                         backgroundColor: kLightBlueColor,
+                        heroTag: "1",
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15)),
                         onPressed: () {},
@@ -122,6 +121,7 @@ class KesukaanPage extends StatelessWidget {
                     SizedBox(width: screenWidth * 0.01),
                     Expanded(
                       child: FloatingActionButton(
+                        heroTag: "2",
                         backgroundColor: kLightBlueColor,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15),
@@ -141,18 +141,6 @@ class KesukaanPage extends StatelessWidget {
                 ),
               ),
             ),
-            // SizedBox(
-            //   width: screenWidth * 0.3,
-            //   child:
-            // ),
-            // SizedBox(
-            //   width: screenWidth * 0.3,
-            //   child: FloatingActionButton(
-            //     shape: RoundedRectangleBorder(),
-            //     onPressed: () {},
-            //     child: Text("Filter"),
-            //   ),
-            // ),
           ],
         ));
   }
@@ -277,7 +265,13 @@ class CardLike extends StatelessWidget {
                       child: SizedBox(
                     height: screenHeight * 0.05,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        // showModalBottomSheet(
+                        //     backgroundColor: kBlueColor2,
+                        //     context: context,
+                        //     builder: (context) => Container());
+                        // log("di print");
+                      },
                       style: ElevatedButton.styleFrom(
                           primary: Colors.transparent,
                           elevation: 0,

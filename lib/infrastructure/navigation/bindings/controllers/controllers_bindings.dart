@@ -7,3 +7,4 @@ export 'package:lelang_apps/infrastructure/navigation/bindings/controllers/verif
 export 'package:lelang_apps/infrastructure/navigation/bindings/controllers/verifikasi.controller.binding.dart';
 export 'package:lelang_apps/infrastructure/navigation/bindings/controllers/success.controller.binding.dart';
 export 'package:lelang_apps/infrastructure/navigation/bindings/controllers/landing.controller.binding.dart';
+export 'package:lelang_apps/infrastructure/navigation/bindings/controllers/profile.controller.binding.dart';

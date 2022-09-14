@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:get/get.dart';
+import 'package:lelang_apps/infrastructure/navigation/routes.dart';
 import 'package:lelang_apps/infrastructure/theme/utils.dart';
 import 'package:lelang_apps/presentation/component/card.hibah.dart';
 import 'package:lelang_apps/presentation/component/card.kelola.dart';
@@ -56,7 +58,7 @@ class HomePage extends StatelessWidget {
                                   width: screenWidth * 0.07,
                                 )),
                             IconButton(
-                                onPressed: () {},
+                                onPressed: () => Get.toNamed(Routes.PROFILE),
                                 icon: Image.asset(
                                   "assets/icon/nav.png",
                                   width: screenWidth * 0.07,
